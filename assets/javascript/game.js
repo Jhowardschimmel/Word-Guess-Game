@@ -50,77 +50,32 @@ function updateDisplay() {
 
 
 function makeGuess(userPress) {
-    
 
 
 
-updateDisplay();
+
+    updateDisplay();
     for (var i = 0; i < selectedPokemon.length; i++) {
 
         if (selectedPokemon[i] === userPress) {
 
             guessingPokemon.splice(selectedPokemon.indexOf(userPress), 1, userPress)
 
-            
-            
 
-            }
+
+
         }
-
-        checkRepeats();
-        updateDisplay();
     }
 
-    function checkRepeats(userPress) {
 
-        for (var i = 0; i < 4; i++) {
-             
-            guessingPokemon.splice(selectedPokemon.indexOf(userPress), 1, userPress)
-        }
-
-        }
-
-        
-
-
-
-
-
-
-
-
-
-
-
+    updateDisplay();
+}
 
 function setupGame() {
 
-
-
-
-
-
-
-
-
-
-
-
     randomWord();
 
-
-
-
 }
-
-
-
-
-
-
-
-
-
 
 
 setupGame();
