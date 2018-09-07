@@ -2,17 +2,26 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Global Hangman</title>
+    <title>Hangemon</title>
   </head>
 
-  <body>
-      <p id="startgame">Press any key to get started!</p>
-
-      <p>Wins:</p>
-
-      <p> Number of Guesses Remaining:</p>
-
-      <p id>Letters Already Guessed:</p>
-      <p id="guessarea"></p>
-      <script src="assets/javascript/game.js"></script>
+  <div id="mainbox">
+    <header>
+        <h1>Hangman Game!</h1>
+        <div class="instructions">
+            <h3>Press Any Key To Begin</h3>
+        </div>
+        <div class="wins">
+            <h3>Wins</h3>
+        </div>
+        <div class="losses">
+            <h3>Losses</h3>
+        </div>
+        <div class="lettersguessed">
+            <h3>Letters Guessed</h3>
+        </div>
+        <div id="currentword"></div>
+    </header>
+</div>
+      <script src="assets/javascript/gam.js"></script>
   </body>
